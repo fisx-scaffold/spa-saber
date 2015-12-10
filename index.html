@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <title>${#page-title#}</title>
+    <link href="src/app.styl" rel="stylesheet">
+</head>
+<body>
+    <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/2-1-0/esl.js"></script>
+    <div id="viewport"></div>
+    <script>
+    require(['app'], function (app) {
+        app.init();
+    });
+    </script>
+</body>
+</html>
