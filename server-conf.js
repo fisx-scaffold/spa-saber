@@ -66,12 +66,7 @@ epr.stylusPlugin = epr.plugin({
 exports.stylus = epr.stylus;
 
 exports.getLocations = function () {
-    var requireInjector = requireConfigInjector({
-        // 自定义注入 `require.config` 的自定义配置
-        requireConfig: {
-            baseUrl: 'src'
-        }
-    });
+    var requireInjector = requireConfigInjector();
 
     return [
         {
