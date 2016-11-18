@@ -1,6 +1,6 @@
 /**
  * @file fisx 编译的配置文件
- * @author ${author}
+ * @author ${#author#}
  */
 
 var pageFiles = ['index.html'];

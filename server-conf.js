@@ -7,7 +7,7 @@
  *       1) 以发布目录进行调试查看，同时支持修改浏览器自动刷新命令：
  *          fisx release -wL
  *          fisx server start --release
- * @author ${author}
+ * @author ${#author#}
  */
 
 /* global redirect:false */

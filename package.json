@@ -9,7 +9,7 @@
   "author": "",
   "repository": "",
   "license": "BSD",
-  "fisx": {
+  "${#manifestKey#}": {
     "dependencies": {
       "etpl": "~3.0.1",
       "fastclick": "~1.0.6",
