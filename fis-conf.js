@@ -6,20 +6,15 @@
 var pageFiles = ['index.html'];
 
 // 初始化要编译的样式文件: 只处理页面引用的样式文件
-var _ = fis.util;
-var styleFiles = _.extractLinkStyleFileSync({
-    files: pageFiles
-});
-
 var epr = require('edp-provider-rider');
 var riderUI = require('rider-ui');
 var stylusPlugin = epr.plugin();
-fis.addProcessStyleFiles(styleFiles, {
+fis.initProcessStyleFiles(pageFiles, {
     use: function (stylus) {
         stylus.use(stylusPlugin);
         stylus.use(riderUI());
     }
-}, true);
+});
 
 // 启用相对路径
 fis.match('index.html', {
