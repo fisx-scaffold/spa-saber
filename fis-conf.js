@@ -31,8 +31,8 @@ fis.match('/src/(**.tpl)', {
         format: false
     }),
     useHash: true,
-    release: '/asset/$1.tpl',
-    rExt: '.js'
+    release: '/asset/$1.tpl', // 加上 .tpl 这样输出的文件后缀有两个 .tpl，最后一个被替换成 rExt
+    rExt: '.js' // 可以作为 jslike 模块处理
 });
 
 // 启用 amd 模块编译
