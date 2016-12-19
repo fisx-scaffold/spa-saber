@@ -73,11 +73,7 @@ exports.getLocations = function () {
             location: /\/$/,
             handler: [
                 home('index.html'),
-                requireInjector,
-                // 推荐使用 Chrome 开发者工具调试页面
-                // 如需单独调试 Android 4.4- 设备，可启用 Weinre 相关配置
-                // weinre({port: 8889}),
-                livereload()
+                requireInjector
             ]
         },
         {
